@@ -82,6 +82,11 @@
                     Laravel
                 </div>
 
+                <div class="visible-print text-center">
+                    {!! QrCode::size(100)->generate(Request::url()); !!}
+                    <p>Scan me to return to the original page.</p>
+                </div>
+
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
