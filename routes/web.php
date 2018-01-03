@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::get('/tracy',function(){
     throw new \Exception('Tracyworks!');
 });
+
+Route::get('mail', 'MailController@getSend');
